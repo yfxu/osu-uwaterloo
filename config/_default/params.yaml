@@ -1,0 +1,38 @@
+executives:
+  - username: jiaxunjason
+    userId: 6925441
+    term: 3B
+    program: CS
+    name: null
+    discord: jiaxunjason
+    blurb: 3rd year CS student, DT1 hater. One of the 17 Jasons in osu!uWaterloo.
+    role: President
+
+members:
+  - username: Feiri
+    userId: 3214844
+    term: 4A
+    program: ECE
+    name: null
+    discord: feiri
+    blurb: cool description for feiri something something mapper
+
+alumni:
+  - username: lightlance7
+    userId: 2103833
+    program: Honours Math
+    name: null
+    discord: arccosine
+    blurb: this dude is cracked on god
+  - username: ThunderBird2678
+    userId: 3388082
+    program: ECE
+    name: null
+    discord: thunderbird2678
+    blurb: idk man what do I write here
+  - username: Cyxsound
+    userId: 617073
+    program: I don't remember what program he was in
+    name: null
+    discord: cyxsound
+    blurb: kind of an og tech god for real no cap tho
