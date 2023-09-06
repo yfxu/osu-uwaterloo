@@ -54,6 +54,8 @@ Members are split into three categories, each represented by a different array i
   program:  string        # UWaterloo program (eg. ECE or AFM etc) 
   name:     string | null # IRL name
   discord:  string        # discord username
+  twitch:   string | null # Twitch handle
+  youtube:  string | null # YouTube handle 
   blurb:    string        # user blurb
   role:     string        # executive member role
 ```
@@ -67,6 +69,8 @@ Members are split into three categories, each represented by a different array i
   program:  string        # UWaterloo program (eg. ECE or AFM etc) 
   name:     string | null # IRL name
   discord:  string        # discord username
+  twitch:   string | null # Twitch handle
+  youtube:  string | null # YouTube handle 
   blurb:    string        # user blurb
 ```
 
@@ -78,6 +82,8 @@ Members are split into three categories, each represented by a different array i
   program:  string        # UWaterloo program (eg. ECE or AFM etc) 
   name:     string | null # IRL name
   discord:  string        # discord username
+  twitch:   string | null # Twitch handle
+  youtube:  string | null # YouTube handle 
   blurb:    string        # user blurb
 ```
 

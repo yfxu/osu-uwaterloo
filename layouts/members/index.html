@@ -13,7 +13,15 @@
           <span class="member-role">{{ .role }}</span>
           <span class="member-program">{{ .term }} {{ .program }}</span>
           <span class="member-blurb">{{ .blurb }}</span>
-          <span class="member-discord">{{ partial "svg" "discord" }} @{{ .discord }}</span>
+          <span class="member-socials">
+            <span class="member-social-link">{{ partial "svg" "discord" }} @{{ .discord }}</span>
+            {{ if .twitch }}
+            <span class="member-social-link">{{ partial "svg" "twitch" }} <a href="https://twitch.tv/{{ .twitch }}">@{{ .twitch }}</a></span>
+            {{ end }}
+            {{ if .youtube }}
+            <span class="member-social-link">{{ partial "svg" "youtube" }} <a href="https://youtube.com/@{{ .youtube }}">@{{ .youtube }}</a></span>
+            {{ end }}
+          </span>
         </div>
       </div>
       {{ end }}
@@ -28,7 +36,17 @@
           <span class="member-username"><a href="https://osu.ppy.sh/users/{{ .userId }}">{{ .username }}</a></span>
           <span class="member-program">{{ .term }} {{ .program }}</span>
           <span class="member-blurb">{{ .blurb }}</span>
-          <span class="member-discord">{{ partial "svg" "discord" }} @{{ .discord }}</span>
+          <span class="member-socials">
+            <span class="member-social-link">{{ partial "svg" "discord" }} @{{ .discord }}</span>
+            {{ if .twitch }}
+            <span class="member-social-link">{{ partial "svg" "twitch" }} <a href="https://twitch.tv/{{ .twitch }}">@{{ .twitch
+                }}</a></span>
+            {{ end }}
+            {{ if .youtube }}
+            <span class="member-social-link">{{ partial "svg" "youtube" }} <a href="https://youtube.com/@{{ .youtube }}">@{{
+                .youtube }}</a></span>
+            {{ end }}
+          </span>
         </div>
       </div>
       {{ end }}
@@ -43,7 +61,17 @@
           <span class="member-username"><a href="https://osu.ppy.sh/users/{{ .userId }}">{{ .username }}</a></span>
           <span class="member-program">{{ .program }}</span>
           <span class="member-blurb">{{ .blurb }}</span>
-          <span class="member-discord">{{ partial "svg" "discord" }} @{{ .discord }}</span>
+          <span class="member-socials">
+            <span class="member-social-link">{{ partial "svg" "discord" }} @{{ .discord }}</span>
+            {{ if .twitch }}
+            <span class="member-social-link">{{ partial "svg" "twitch" }} <a href="https://twitch.tv/{{ .twitch }}">@{{ .twitch
+                }}</a></span>
+            {{ end }}
+            {{ if .youtube }}
+            <span class="member-social-link">{{ partial "svg" "youtube" }} <a href="https://youtube.com/@{{ .youtube }}">@{{
+                .youtube }}</a></span>
+            {{ end }}
+          </span>
         </div>
       </div>
       {{ end }}

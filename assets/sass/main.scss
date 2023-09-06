@@ -73,18 +73,24 @@ div.members{
                 margin-bottom: 0.5rem;
             }
     
-            span.member-discord {
+            span.member-socials {
                 color: $muted-font-colour;
                 display: flex;
                 flex-direction: row;
-                align-items: center;
-                column-gap: 0.5em;
+                column-gap: 1em;
+
+                span.member-social-link {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    column-gap: 0.25em;
+                }
             }
         }
     
         &.member-executive > div.member-details {
             > span.member-username { font-size: 2em; }
-            > span.member-program { font-size: unset; }
+            // > span.member-program { font-size: unset; }
         }
     }
 }
@@ -104,6 +110,7 @@ div.events {
 
             &:hover {
                 filter: brightness(0.75);
+                transition-duration: 150ms;
             }
         }
     }
@@ -141,6 +148,7 @@ nav {
 
             &:hover {
                 filter: brightness(0.8);
+                transition-duration: 150ms;
             }
         }
 
@@ -157,11 +165,12 @@ nav {
                 &:hover {
                     color: $accent-colour;
                     background-color: $background-dark-colour;
+                    transition-duration: 150ms;
                 }
             }
         }
     }
-    
+
     div.nav-socials {
         display: flex;
         flex-direction: row;
@@ -169,6 +178,7 @@ nav {
 
         svg:hover {
             fill: $accent-colour;
+            transition-duration: 150ms;
         }
     }
 }
@@ -192,8 +202,8 @@ img.pfp {
     border-radius: 4px;
 
     &.pfp-executive {
-        width: 6em;
-        height: 6em;
+        width: 7em;
+        height: 7em;
         border: 3px solid $font-colour;
     }
 
@@ -227,4 +237,8 @@ hr {
     border-left: none;
     width: 100%;
     margin: 0;
+}
+
+p {
+    line-height: 1.5em;
 }
