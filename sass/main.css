@@ -43,16 +43,18 @@ div.members {
       div.members div.member div.member-details span.member-blurb {
         flex-grow: 1;
         margin-bottom: 0.5rem; }
-      div.members div.member div.member-details span.member-discord {
+      div.members div.member div.member-details span.member-socials {
         color: #999;
         display: flex;
         flex-direction: row;
-        align-items: center;
-        column-gap: 0.5em; }
+        column-gap: 1em; }
+        div.members div.member div.member-details span.member-socials span.member-social-link {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          column-gap: 0.25em; }
     div.members div.member.member-executive > div.member-details > span.member-username {
       font-size: 2em; }
-    div.members div.member.member-executive > div.member-details > span.member-program {
-      font-size: unset; }
 
 div.events {
   display: grid;
@@ -65,7 +67,8 @@ div.events {
     border-radius: 2px;
     width: 100%; }
     div.events a.event img:hover {
-      filter: brightness(0.75); }
+      filter: brightness(0.75);
+      transition-duration: 150ms; }
 
 span.event-author {
   margin-top: -1em; }
@@ -90,7 +93,8 @@ nav {
       width: 3em;
       height: 3em; }
       nav div.nav-navigation img:hover {
-        filter: brightness(0.8); }
+        filter: brightness(0.8);
+        transition-duration: 150ms; }
     nav div.nav-navigation div.nav-navigation-text-links {
       display: flex;
       flex-direction: row;
@@ -101,13 +105,15 @@ nav {
         padding: 0.5em 1em; }
         nav div.nav-navigation div.nav-navigation-text-links a:hover {
           color: #e8ca21;
-          background-color: #222; }
+          background-color: #222;
+          transition-duration: 150ms; }
   nav div.nav-socials {
     display: flex;
     flex-direction: row;
     column-gap: 1em; }
     nav div.nav-socials svg:hover {
-      fill: #e8ca21; }
+      fill: #e8ca21;
+      transition-duration: 150ms; }
 
 footer {
   padding: 1em 0; }
@@ -123,8 +129,8 @@ img.pfp {
   border: 2px solid #ddd;
   border-radius: 4px; }
   img.pfp.pfp-executive {
-    width: 6em;
-    height: 6em;
+    width: 7em;
+    height: 7em;
     border: 3px solid #ddd; }
   img.pfp.pfp-member, img.pfp.pfp-alumnus {
     width: 4em;
@@ -151,3 +157,6 @@ hr {
   border-left: none;
   width: 100%;
   margin: 0; }
+
+p {
+  line-height: 1.5em; }
